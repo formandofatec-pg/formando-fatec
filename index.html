@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meu Site - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Meu Site</a>
+      <nav class="nav">
+        <a href="/">Início</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/forum.html">Fórum</a>
+        <a href="/admin/">Painel</a>
+      </nav>
+      <div class="actions">
+        <button id="theme-toggle" aria-label="Alternar tema">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <h1>Bem-vindo ao meu projeto</h1>
+    <p>Site estático moderno em <strong>HTML, CSS e JavaScript</strong> com Netlify CMS (Decap CMS), hospedado no Netlify e com posts armazenados no GitHub.</p>
+
+    <div class="cards">
+      <a class="card" href="/blog.html">
+        <h3>Blog</h3>
+        <p>Leia meus posts (armazenados como Markdown no diretório <code>/posts</code>).</p>
+      </a>
+      <a class="card" href="/forum.html">
+        <h3>Fórum</h3>
+        <p>Abra o fórum integrado (iframe) — substitua o link pelo seu fórum.</p>
+      </a>
+      <a class="card" href="/admin/">
+        <h3>Painel</h3>
+        <p>Acesse <code>/admin</code> para abrir o Netlify CMS depois que configurar Identity e Git Gateway no Netlify.</p>
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Feito com ❤️ — DSM Fatec</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

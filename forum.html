@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fórum - Meu Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Meu Site</a>
+      <nav class="nav">
+        <a href="/">Início</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/forum.html">Fórum</a>
+      </nav>
+      <div class="actions">
+        <button id="theme-toggle" aria-label="Alternar tema">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Fórum</h1>
+    <p>Fórum embutido abaixo (substitua <code>https://seuforum.com</code> pelo seu fórum).</p>
+    <div class="iframe-wrap">
+      <iframe src="https://seuforum.com" title="Fórum" frameborder="0"></iframe>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Feito com ❤️ — DSM Fatec</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
