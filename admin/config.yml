@@ -2,8 +2,9 @@ backend:
   name: github
   repo: formando-fatec/formandofatec-pg
   branch: main
-  base_url: https://dev-fklkda2o0arild4y.us.auth0.com
-  auth_endpoint: /authorize
+  base_url: https://formandofatec.netlify.app/.netlify/functions/auth
+  auth_endpoint: auth
+
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
