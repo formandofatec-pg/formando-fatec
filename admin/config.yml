@@ -1,23 +1,21 @@
 backend:
   name: github
-  repo: formandofatec-pg/formando-fatec
+  repo: formando-fatec/formandofatec-pg
   branch: main
-  auth_type: implicit
-  app_id: LBG8KT57CgHDho6AtSBqXzZNL4O62NJn
   base_url: https://dev-fklkda2o0arild4y.us.auth0.com
+  auth_endpoint: /authorize
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
-site_url: "https://formandofatec.netlify.app"
-display_url: "https://formandofatec.netlify.app"
+site_url: https://formandofatec.netlify.app
 
 collections:
   - name: "posts"
     label: "Posts"
     folder: "posts"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
